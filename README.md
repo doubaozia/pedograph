@@ -27,28 +27,28 @@ const logger = require('pedograph').logger;
 
 logger.debug('some infomation!');
 ```
-启动你的nodejs服务器，查看日志输出
+启动你的nodejs服务器，查看日志输出
 ```shell
 [2017-12-27 12:10:00] [DEBUG] some infomation!
 ```
 
 ## 2. 配置
 
-pedograph中间件接收一个格式参数format，由可配置项以空格分割，其中可配置项如下所示：
+pedograph中间件接收一个格式参数format，由可配置项以空格分割，其中可配置项如下所示：
 
 format默认为：':datetime :method :url :ip :response-time'
-依次为：时间 方法 路由 请求IP 响应时间
+依次为：时间 方法 路由 请求IP 响应时间
 日志级别自动显示
 
 可选项如下：
 ### :datetime
 日期选项，格式为YYYY-MM-DD hh:mm:ss
 ### :method
-请求方法，格式为请求方法的大写，如：GET POST PUT
+请求方法，格式为请求方法的大写，如：GET POST PUT
 ### :url
 请求的路由，如：/home/page
 ### :response-time
-相应时间，单位毫秒ms，请求到达时为0
+相应时间，单位毫秒ms，请求到达时为0
 ### :user-agent
-客户端（浏览器）的UA
+客户端（浏览器）的UA
 
