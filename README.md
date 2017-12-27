@@ -2,7 +2,7 @@
 
 koa 1.x 日志模块，提供中间件和格式化日志输出功能。暂不支持koa 2.x版本
 
-[![npm](https://img.shields.io/badge/npm-v0.1.1-blue.svg)](https://www.npmjs.com/package/pedograph)
+[![npm](https://img.shields.io/badge/npm-v0.1.2-blue.svg)](https://www.npmjs.com/package/pedograph)
 
 ## 1. 用法
 
@@ -15,10 +15,14 @@ $ npm install pedograph --save
 const pedo = require('pedograph');
 
 app.use(pedo.pedograph(format));
+
+// 在上下文中引用
+this.logger.debug('some infomation!');
 ```
 启动你的nodejs服务器，查看日志输出
 ```shell
 [2017-12-27 12:03:14] [GET] [/] [localhost] [INFO]  0ms
+[2017-12-27 12:03:15] [GET] [/] [localhost] [DEBUG] some infomation!
 [2017-12-27 12:03:15] [GET] [/] [localhost] [INFO]  514ms
 ```
 ### 应用中引入
