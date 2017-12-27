@@ -91,7 +91,6 @@ exports.pedograph = function (format) {
     this.logger.error = logger.error.bind(this);
 
     const startTime = new Date().getTime();
-    console.log('sss');
     this.logger.info('0ms');
     yield next;
     const endTime = new Date().getTime();
