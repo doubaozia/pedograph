@@ -39,39 +39,39 @@ const utils = {
 };
 
 const logger = {
-  debug(text) {
-    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[DEBUG] ${utils.checkText(text)}`);
+  debug(...args) {
+    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[DEBUG] ${utils.checkText(...args)}`);
     console.log(chalk.green(log));
   },
-  info(text) {
-    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[INFO]  ${utils.checkText(text)}`);
+  info(...args) {
+    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[INFO]  ${utils.checkText(...args)}`);
     console.log(chalk.blue(log));
   },
-  warning(text) {
-    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[WARN]  ${utils.checkText(text)}`);
+  warning(...args) {
+    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[WARN]  ${utils.checkText(...args)}`);
     console.log(chalk.yellow(log));
   },
-  error(text) {
-    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[ERROR] ${utils.checkText(text)}`);
+  error(...args) {
+    const log = parseFormat.call(this, DEFAULT_FORMAT)(`[ERROR] ${utils.checkText(...args)}`);
     console.log(chalk.red(log));
   }
 };
 
 exports.logger = {
-  debug(text) {
-    const log = parseFormat.call(this, SYS_FORMAT)(`[DEBUG] ${utils.checkText(text)}`);
+  debug(...args) {
+    const log = parseFormat.call(this, SYS_FORMAT)(`[DEBUG] ${utils.checkText(...args)}`);
     console.log(chalk.green(log));
   },
-  info(text) {
-    const log = parseFormat.call(this, SYS_FORMAT)(`[INFO]  ${utils.checkText(text)}`);
+  info(...args) {
+    const log = parseFormat.call(this, SYS_FORMAT)(`[INFO]  ${utils.checkText(...args)}`);
     console.log(chalk.blue(log));
   },
-  warning(text) {
-    const log = parseFormat.call(this, SYS_FORMAT)(`[WARN]  ${utils.checkText(text)}`);
+  warning(...args) {
+    const log = parseFormat.call(this, SYS_FORMAT)(`[WARN]  ${utils.checkText(...args)}`);
     console.log(chalk.yellow(log));
   },
-  error(text) {
-    const log = parseFormat.call(this, SYS_FORMAT)(`[ERROR] ${utils.checkText(text)}`);
+  error(...args) {
+    const log = parseFormat.call(this, SYS_FORMAT)(`[ERROR] ${utils.checkText(...args)}`);
     console.log(chalk.red(log));
   }
 }
