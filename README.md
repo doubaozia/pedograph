@@ -2,7 +2,7 @@
 
 koa 1.x 日志模块，提供中间件和格式化日志输出功能。暂不支持koa 2.x版本
 
-[![npm](https://img.shields.io/badge/npm-v0.1.3-blue.svg)](https://www.npmjs.com/package/pedograph)
+[![npm](https://img.shields.io/badge/npm-v0.1.4-blue.svg)](https://www.npmjs.com/package/pedograph)
 
 ## 1. 用法
 
